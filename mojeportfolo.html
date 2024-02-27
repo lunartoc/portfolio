@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moje Portfolio</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/fontello.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+     font-family: 'Outfit', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #000000;
+      padding: 15px;
+      color: rgb(0, 4, 255);
+      text-align: center;
+      font-weight: bold;
+      flex-wrap: wrap;
+      height: 80px;
+      box-shadow: 0 20px 20px rgb(0, 0, 0, 0.5);
+      text-shadow: 0 5px 10px rgb(255, 254, 254);
+    }
+    
+    h1 {
+      margin-top: 0;
+      font-size: 36px;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: 10px solid rgb(7, 8, 102);
+      border-radius: 10px;
+    }
+    
+    .left {
+      padding: 20px;
+      border-right: 10px solid rgb(7, 8, 102);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 10px 0 0 10px;
+    }
+    
+    .left p {
+      font-size: 24px;
+      font-style: italic;
+      margin: 0;
+      font-weight: bold;
+    }
+    
+    .right {
+      padding: 20px;
+      text-align: center;
+      border-radius: 0 10px 10px 0;
+    }
+    
+    .right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .right h3 {
+      margin-top: 0;
+      font-weight: bold;
+    }
+    
+    .right p {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    .right {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+}
+    
+    footer {
+      background-color: rgb(70, 70, 70);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+    }
+    
+    .umiejetnosci {
+      margin-top: 20px;
+      text-align: right;
+    }
+    
+    .umiejetnosci li {
+      display: block;
+      margin-bottom: 5px;
+      position: relative;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .umiejetnosci li::after {
+      content: "...";
+      position: absolute;
+      top: 0;
+      right: -10px;
+    }
+    
+    .ikony {
+      background-color: rgb(255, 255, 255);
+      width: 300px;
+      height: 50px;
+      border: 5px double rgb(0, 4, 255);
+      border-radius: 10%;
+      box-shadow: 5px 5px 5px rgb(7, 8, 102);
+      flex-wrap: wrap;
+      border-radius: 10px;
+    }
+    
+    .ikony i {
+      font-size: 50px;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: rgb(0, 0, 0);
+    }
+    
+    a:link {
+      color: black;
+    }
+    
+    a:visited {
+      color: rgb(0, 0, 0);
+    }
+    .left:hover {
+  color: rgb(157, 157, 185);  
+}
+
+.right:hover {
+  color: rgb(157, 157, 185);
+}
+.right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px; 
+  border: 2px solid rgb(7, 8, 102);
+}
+  </style>
+</head>
+<body>
+  <header>  
+    <h1 style="font-size: 75px; text-shadow: white;">Jakub Miętkiewicz</h1>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <br><br><br><br><br><br><br><br><br><br>
+      <quote style="font-size: 35px;">"Teraz stałem się Śmiercią, niszczycielem światów. - Oppenheimer"</quote><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="ikony">
+        <a href="https://www.youtube.com/@lunartoc" target="_blank"><i class="icon-youtube-play"></i></a>
+        <a href="https://github.com/lunartoc" target="_blank"><i class="icon-github-circled"></i></a>
+        <a href="https://twitter.com/lookaluna" target="_blank"><i class="icon-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100073603832768" target="_blank"><i class="icon-facebook-official"></i></a>
+      </div>
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="right">
+      <img src="superkomp.jpg" alt="Moje zdjęcie">
+      <h3></h3>
+      <ul class="umiejetnosci">
+        <input type="checkbox"><li>Tworzenie Stron Internetowych</li>
+        <input type="checkbox"><li>Umiejętność korzystania z githuba</li>
+        <input type="checkbox"><li>Pisanie kodów w pythonie</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>
+    &copy; 2024 mieta
+  </footer>
+</body>
+</html>
